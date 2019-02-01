@@ -51,7 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-C1-ar7">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-C1-ar7">
                                 <rect key="frame" x="0.0" y="260" width="414" height="476"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu índice de massa corporal é" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kp2-oU-mnV">
@@ -135,6 +135,7 @@
                     </view>
                     <connections>
                         <outlet property="ivResukt" destination="2di-YL-H8a" id="Ecq-fJ-UJj"/>
+                        <outlet property="ivView" destination="Ao1-C1-ar7" id="hvO-Sa-hy1"/>
                         <outlet property="lbResult" destination="mhD-F4-M50" id="31b-8n-Skd"/>
                         <outlet property="tfHeight" destination="gxD-p4-AXJ" id="TAo-qI-RLF"/>
                         <outlet property="tfWeight" destination="LmH-t4-bHE" id="eiy-e0-pTh"/>

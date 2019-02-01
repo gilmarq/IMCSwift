@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfHeight: UITextField!
     @IBOutlet weak var lbResult: UILabel!
     @IBOutlet weak var ivResukt: UIImageView!
+     @IBOutlet weak var ivView: UIView!
     var imc: Double = 0
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,8 +53,9 @@ class ViewController: UIViewController {
                 result = "Obesidade"
                 image = "obesidade"
         }
-        lbResult.text =  result
+        lbResult.text = "\(Int(imc)): \(result)"
         ivResukt.image = UIImage(named: image)
+        ivView.isHidden = false
     
        
         
